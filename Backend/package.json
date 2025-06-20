@@ -1,23 +1,21 @@
 {
   "name": "inotebook-backend",
   "version": "1.0.0",
-  "description": "inotebook - Your noteBook on the cloud",
+  "description": "INotebook is a full-stack notes app that lets users securely create, edit, and manage their personal notes from anywhere",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "node.js",
+    "react.js",
+    "express.js",
+    "mongodb"
+  ],
+  "author": "Talha shiekh <tk.shiekh4567@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.2",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.5.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
   }
 }
