@@ -7,8 +7,9 @@ const express = require('express')
 const notesRouter = require("./routes/notes-route");
 const authRouter = require("./routes/auth-route");
 const app = express()
-const port = 3000
+const port = 3000;
 
+app.use(express.json());
 
 app.use("/api/notes",notesRouter);
 app.use("/api/auth",authRouter);
