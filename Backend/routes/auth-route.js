@@ -37,7 +37,7 @@ router.post("/createuser", [
 
         const token = jwt.sign({ id: user._id }, SECRET_KEY);
 
-        res.json({ token });
+        res.json({ token,success:true });
 
     } catch (error) {
         console.error(error.message);
@@ -69,7 +69,7 @@ router.post("/login", [
 
         const token = jwt.sign({ id: user._id }, SECRET_KEY);
 
-        res.json({ token });
+        res.json({ token,success:true });
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Some Error occurred !");

@@ -13,7 +13,6 @@ const Notes = (props) => {
 
   useEffect(() => {
     if(localStorage.getItem('token')){
-      console.log("talha shiekh");
       getnote();
     }else{
       navigate("/login");  
